@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/granim.min.js" charset="utf-8"></script>
+        <title>Форма регистрации</title>
+    </head>
+    <body>
+        <canvas id="canvas-basic">Хай</canvas>
+        <script src="js/jquery.min.js"></script>
+        <script>
+var granimInstance = new Granim({
+    element: '#canvas-basic',
+    direction: 'left-right',
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#ff9966', '#ff5e62'],
+                ['#00F260', '#0575E6'],
+                ['#e1eec3', '#f05053']
+            ]
+        }
+    }
+});
+        </script>
+        <main>
+            <div class="form">
+                <h1 class="formaTitle"><strong>Регистрация</strong></h1>
+                <div class="field">           
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Пароль">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Подтверждение пароля">
+                </div>
+                <div class="formbutton">
+                    <a href="#" class="button">Регистрация</a>
+                    <a href="index.html" class="button button2">Вернуться на сайт</a>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
